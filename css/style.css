@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;600;700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%; /*  A cada 1 rem = 10 px */
+}
+body{
+    height: 100vh;
+}
+body, ul, li, p{
+    list-style: none;
+}
+h1, h2, h3, h4, p{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 5.0rem;
+    color: white;
+    line-height: 50px;
+}
+
+h2{
+    font-size: 3.7rem;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+h3{
+    font-size: 2.8rem;
+    color:black;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: rgb(255, 145, 0);
+}
+
+p{
+    font-size: 1.6rem;
+    color: black;
+    line-height: 29px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Menu de Navegação*/
+
+.header{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1140px;
+}
+#logo1{
+    width: 200px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-family: 'roboto', sans-serif;
+}
+.hide{
+    display: none;
+}
+/* Primeira Dobra - Home */
+
+.section-1{
+    background: rgb(13, 112, 0);
+}
+
+.section-1 header{
+    margin: 0 auto;
+}
+
+.section-1 p{
+    color: white;
+    margin-top: 25px;
+    padding-right: 20px;
+}
+.reduz-img{
+    text-align: right;
+    padding: 20px;
+    height: 520px;
+    max-width: 400px;
+}
+/*css flexbox*/
+
+.flex{ /*conteiner*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.flex img{
+    height: 90%;
+}
+.flex > div{ /*itens do conteiner*/
+    flex: 1 1 200px;
+
+    /*margin: 30px;*/ /*margem entre itens*/
+}
+.flex span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 7.0rem;
+    font-weight: 700;
+    color:rgb(226, 226, 226);
+}
+.flex a{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    padding: 15px 25px;
+    transition: background .3s;
+    background-color:rgb(255, 145, 0);
+    border-radius: 3px;
+    display: inline-block;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.flex a:hover{
+    background-color: rgb(252, 211, 135);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* Segunda Dobra - Sobre */
+
+#inverte{
+    flex-wrap: wrap-reverse;   
+}
+.alinha-esquerda{
+    text-align: left;
+    padding: 20px;
+    height: 380px;
+    max-width: 400px;
+}
+.alinha-direita{
+    text-align: right;
+    padding: 20px;
+    height: 380px;
+    max-width: 400px;
+}
+/*terceira dobra*/
+.grid{
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 40px;
+}
+.box-branca{
+    padding: 60px 20px;
+    background-color: white;
+    max-width: 325px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.12);
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s
+}
+.box-branca img{
+    margin: 30px auto;
+}
+.box-branca:hover{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.18);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.flex .box-branca{
+    flex: 1 1 250px;
+    margin: 30px;
+}
+
+/* Quarta Dobra - Clientes*/
+
+.carrocel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+/* Quinta Dobra - Formulário */
+.reduz-logo800{
+    padding: 20px;
+    text-align: center;
+    height: 10vw;
+}
+
+.form{
+    background-color: white;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.12);
+    padding: 40px;
+}
+
+/*Formulário de contato Blogger */
+#formcontact{
+    background:#ffffff; /*---cor de fundo do formulário---*/
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+/*#formcontact p{}   /*---referente aos estilos da fonte dos campos---*/
+    
+
+.contact-form-name, .contact-form-email, 
+.contact-form-email-message, 
+.contact-form-button-submit { /*---referente aos campos---*/
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+    padding-left: 6px;
+    line-height: 35px;
+    font-size: 1.4rem;
+    font-family: 'Open Sans',sans-serif;
+    color: #000000;   /*---cor da fonte dos campos---*/
+}
+.contact-form-button-submit {  /*-----referente ao Botão enviar---*/
+    width: 150px;  /*-----largura do botão---*/
+    height: 40px;    /*-----altura do botão---*/
+    font-size: 1.6rem;   /*-----tamanho da fonte---*/
+    background: rgb(216, 0, 0);   /*-----cor de fundo botão---*/
+    color: #fff;   /*-----cor da fonte---*/
+    border:rgba(0, 255, 255, 0);
+    margin-top: 10px;
+    cursor: pointer;
+}
+.contact-form-button-submit:hover {  /*-----modo hover do Botão enviar---*/
+    background: #ff5752f3;   /*-----cor de fundo botão---*/
+    color: rgb(255, 255, 255);   /*-----cor da fonte---*/
+}
+.font-form{
+    font-family: 'open sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: black;
+    line-height: 35px;
+}
+/*#ContactForm1 {
+    
+}*/
+
+.footer{
+    height: 50px;
+    background-color:rgb(40,40,40);
+}
+
+.footer p{
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+@media (max-width: 922px){
+
+    #img-dindin{
+        height: 320px;
+    }       
+    #img-dindin1{
+        height: 350px;
+    }
+    #img-dindin2{
+        height: 350px;
+    }
+    
+}
+
+@media (max-width: 869px){
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 792px){
+    .flex{
+        flex-direction: column;
+        text-align: center;
+    }
+    #img-1{
+        order: -1;
+        margin: 0px 0px -60px 0px;
+    }
+    h1{
+        padding: 20px 0px 0px 0px;
+    }
+    h2{
+        padding: 20px 0px 20px 0px;
+    }
+    a{
+        margin-bottom: 50px;
+    }
+    #img-dindin{
+        margin: 0px 0px 0px 0px;
+    }
+    #img-dindin1{
+        order: -1;
+        margin-bottom: -60px;
+    }
+    #img-dindin2{
+        margin-top: -30px;
+        margin-bottom: -80px;
+    }
+    .reduz-logo800{
+        display: contents;
+    }
+}
+
+@media (max-width: 488px){
+    #img-1{
+        padding: 20px;
+        text-align: center;
+        height: 70vw;
+    }
+}
+
+@media (max-width: 419px){
+    
+    html{
+        font-size: 45%;
+    }
+    .header{
+        display: none;
+    }
+    .hide{
+        display:flex;
+        width: 80%;
+        max-width: 320px;
+        text-align:center;
+        padding: 30px;
+    }
+    #img-1{
+        margin-bottom: 1px;
+    }
+    #img-dindin{
+        height: 60vw;
+    }
+    #img-dindin1{
+        height: 80vw;
+    }
+    #img-dindin2{
+        height: 100vw;
+    }
+}
