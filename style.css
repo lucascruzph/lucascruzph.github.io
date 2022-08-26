@@ -3,6 +3,9 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+html{
+    background-color: #263552;
+}
 .section-hero{
     background-color: #263552;
     display: flex;
